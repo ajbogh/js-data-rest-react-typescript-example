@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  color: white;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar-main>ul{
+  list-style: none;
+}
+
+#navbar-main>ul>li {
+  display: inline-block;
+  word-wrap: none;
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 5px;
+}

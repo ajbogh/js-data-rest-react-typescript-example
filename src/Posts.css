@@ -1,0 +1,12 @@
+.Posts-aside {
+  float: right;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.5em;
+}
