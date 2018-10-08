@@ -2,6 +2,21 @@
 
 The code in this example shows how to connect [JS-Data](https://www.js-data.io/) with a React frontend, Express backend, and Typescript as the compiler.
 
+## Installation
+
+```
+git clone git@github.com:ajbogh/js-data-rest-react-typescript-example.git
+npm install
+# or yarn install
+```
+
+## Running the code
+
+```
+npm run start
+# or yarn start
+```
+
 ## Express Server
 
 The Express server source code can be found in the `/server` directory. The important files are:
