@@ -65,7 +65,7 @@ export default class User extends React.Component<IUserProps, IUserState>{
     if (!this.state.user) {
       return <div>User {this.props.match.params.id} not found!</div>;
     }
-    console.log(this.state.user);
+
     return (
       <div className="user">
         <h1 className="page-header">
@@ -77,10 +77,9 @@ export default class User extends React.Component<IUserProps, IUserState>{
             <h3>Posts</h3>
 
             {this.state.user.posts.map((post: any, index: number) => {
-              const linkParams = { id: post.id };
               return (
                 <div key={index}>
-                  <Link to="post" {...linkParams}>{post.title}</Link>
+                  <Link to={`/posts/${post.id}`}>{post.title}</Link>
                   <span className="pull-right">
                     {post.created_at}
                   </span>
@@ -92,11 +91,11 @@ export default class User extends React.Component<IUserProps, IUserState>{
             <h3>Comments</h3>
 
             {this.state.user.comments.map((comment: any, index: number) => {
-              const linkParams = { id: comment.post_id };
+
               return (
                 <div key={index}>
-                  <Link to="post" {...linkParams}>Go to post</Link>&nbsp;
-                  <span>{comment.body}</span>
+                  <Link to={`/posts/${comment.post_id}`}>Go to post</Link>&nbsp;
+                  <span>{comment.content}</span>
                   <span className="pull-right">
                     {comment.created_at}
                   </span>

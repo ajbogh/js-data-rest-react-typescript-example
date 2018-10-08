@@ -31,7 +31,6 @@ export const CommentSchema = new Schema({
     post_id: { type: 'number', indexed: true },
     // Only the DataStore and SimpleStore components care about the "indexed" attribute
     user_id: { type: 'number', indexed: true },
-
   },
   type: 'object'
 });

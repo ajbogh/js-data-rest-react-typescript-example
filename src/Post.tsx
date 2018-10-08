@@ -1,8 +1,8 @@
 import * as PropTypes from 'prop-types';
-import * as React from 'react'
-import {store} from './Store'
+import * as React from 'react';
+import { store } from './Store';
 
-import './Posts.css'
+import './Post.css';
 
 interface IPostProps {
   match: any;
@@ -34,13 +34,26 @@ export default class Post extends React.Component<IPostProps, IPostState>{
   public onChange = () => {
     this.setState(this.getState())
   }
+
   public getState() {
     return {
       post: store.get('post', this.props.match.params.id) || {}
     }
   }
+
+  public renderComments() {
+    if (!this.state.post.comments) {
+      return null;
+    }
+    return this.state.post.comments.map((comment: any) => {
+      return <div key={comment.id} className="comment">
+        <div>{comment.content}</div>
+        <div><a href={`/users/${comment.user.id}`} rel="author">{comment.user.name}</a></div>
+      </div>;
+    });
+  }
+
   public render() {
-    console.log(this.state.post);
     return (
       <div className="post">
         <h2 className="page-header">
@@ -48,6 +61,9 @@ export default class Post extends React.Component<IPostProps, IPostState>{
         </h2>
         <time style={{ display: 'block', marginBottom: '10px' }}><small>Published: {this.state.post.date_published}</small></time>
         <article>{this.state.post.content}</article>
+        <hr />
+        <h3>Comments</h3>
+        <section className="comments">{this.renderComments()}</section>
       </div>
     )
   }

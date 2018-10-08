@@ -8,6 +8,12 @@ const comments = {
     post_id: 123,
     user_id: 1
   },
+  345: {
+    content: 'This post was awesome!',
+    id: 345,
+    post_id: 123,
+    user_id: 1
+  },
   456: {
     content: 'Test Comment 2',
     id: 456,

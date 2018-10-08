@@ -1,0 +1,11 @@
+.post article {
+  margin-bottom: 15px;
+}
+
+.post hr {
+  border: 1px solid lightgrey;
+}
+
+.post .comment {
+  margin-bottom: 15px;
+}

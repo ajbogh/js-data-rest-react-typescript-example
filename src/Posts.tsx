@@ -1,8 +1,10 @@
-import * as React from 'react'
-import {Link} from 'react-router-dom'
-import {store} from './Store'
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { store } from './Store';
 
-const PAGE_SIZE = 5
+import './Posts.css';
+
+const PAGE_SIZE = 5;
 
 /**
  * @param {number} pageNum The page to retrieve.

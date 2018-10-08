@@ -37,11 +37,6 @@ export default class Header extends React.Component<IHeaderProps> {
         <div className="container">
           <div className="navbar-header">
             <a href="/" className="navbar-brand"><img src="https://files.readme.io/fTQdMshQaObqmWzmV9h5_js-data.png" title="js-data blog example" width="50" height="50" /></a>
-            <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-              <span className="icon-bar" />
-              <span className="icon-bar" />
-              <span className="icon-bar" />
-            </button>
           </div>
           <div className="navbar-collapse collapse" id="navbar-main">
             <ul className="nav navbar-nav navbar-right">{links}</ul>
