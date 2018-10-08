@@ -1,11 +1,11 @@
 {
-  "name": "react-js-data-swapi-example",
+  "name": "js-data-rest-react-typescript-example",
   "version": "1.0.0",
   "description": "A simple react js-data example using the Star Wars API",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajbogh/react-js-data-swapi-example.git"
+    "url": "git+https://github.com/ajbogh/js-data-rest-react-typescript-example.git"
   },
   "keywords": [
     "react",
@@ -15,9 +15,9 @@
   "author": "Allan Bogh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ajbogh/react-js-data-swapi-example/issues"
+    "url": "https://github.com/ajbogh/js-data-rest-react-typescript-example/issues"
   },
-  "homepage": "https://github.com/ajbogh/react-js-data-swapi-example#readme",
+  "homepage": "https://github.com/ajbogh/js-data-rest-react-typescript-example#readme",
   "scripts": {
     "start": "npm-run-all  --parallel start:client start:server",
     "start:client": "react-scripts-ts start",
